@@ -34,6 +34,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
       body: `╔═════▓࿇࿇▓═════╗\n        ${name}\n╚═════▓࿇࿇▓═════╝\n\n●▬ൠൠ▬𝙊𝙬𝙣𝙚𝙧▬ൠൠ▬●\n\n◈━━━━━NIHAL TRICKER━━━━━◈\n${rand}\n◈━━━━━NIHAL TRICKER━━━━━◈`
     }
     return api.sendMessage(msg, threadID, messageID);
+  };
 
 }
 

@@ -24,14 +24,16 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("Ku jaany ko bol rahy ma owner ke bina nai jana hai🤕🤕👈", threadID);
    };
   
-   mess = "{name}"
-  
-  if (event.body.indexOf("BOT") == 0 || (event.body.indexOf("tak") == 0)) {
+    if ((event.body.toLowerCase() == "does the bot have a brand") || (event.body.toLowerCase() == "does the bot fall")) {
+     return api.sendMessage("Yes <3", threadID);
+   };
+   mess = "❥||ㅎ{name}☆||  ⋆⃝❥͜͡"
+
+  if (event.body.indexOf("bot") == 0 || (event.body.indexOf("Bot") == 0)) {
     var msg = {
-      body: `🍁🌼🌹 ${name} 🌹🌼🍁\n\n 👉${rand} \n\n                            Owner:NIHALTRICKER`
+      body: `╔═════▓࿇࿇▓═════╗\n        ${name}\n╚═════▓࿇࿇▓═════╝\n\n●▬ൠൠ▬𝙊𝙬𝙣𝙚𝙧▬ൠൠ▬●\n\n◈━━━━━NIHAL TRICKER━━━━━◈\n${rand}\n◈━━━━━NIHAL TRICKER━━━━━◈`
     }
     return api.sendMessage(msg, threadID, messageID);
-  };
 
 }
 
